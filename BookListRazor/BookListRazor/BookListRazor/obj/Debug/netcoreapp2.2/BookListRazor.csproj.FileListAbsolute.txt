@@ -28,3 +28,5 @@ C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.dll
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.pdb
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.csproj.CopyComplete
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\Razor\Pages\BookList\Index.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\Razor\Pages\BookList\Create.g.cshtml.cs
