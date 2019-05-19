@@ -1,0 +1,2 @@
+add-migration AddBookToDatabase
+update-database
