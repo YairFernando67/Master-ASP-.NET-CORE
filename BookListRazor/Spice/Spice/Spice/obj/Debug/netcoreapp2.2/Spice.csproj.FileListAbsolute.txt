@@ -78,3 +78,9 @@ C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Sp
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_DeleteAndBackToListButton.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\Category\Details.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_DetailsAndBackToList.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Index.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Create.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_StatusMessage.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Edit.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Details.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\SubCategory\Delete.g.cshtml.cs
