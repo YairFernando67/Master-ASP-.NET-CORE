@@ -89,7 +89,6 @@ namespace Spice.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
             return View(category);
         }
 
@@ -98,16 +97,15 @@ namespace Spice.Areas.Admin.Controllers
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
             var category = await _db.Category.FindAsync(id);
-            if(category == null)
+
+            if (category == null)
             {
                 return View();
             }
             _db.Category.Remove(category);
-
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         //GET - EDIT
         public async Task<IActionResult> Details(int? id)
         {

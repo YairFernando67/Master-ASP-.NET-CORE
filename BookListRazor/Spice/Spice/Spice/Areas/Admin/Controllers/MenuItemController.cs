@@ -200,7 +200,7 @@ namespace Spice.Areas.Admin.Controllers
             return View(MenuItemVM);
         }
 
-        // GET - DELATE
+        //GET : Delete MenuItem
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -208,9 +208,7 @@ namespace Spice.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            MenuItemVM.MenuItem = await _db.MenuItem.Include
-                (x => x.Category).Include(x => x.SubCategory)
-                .SingleOrDefaultAsync(m => m.Id == id);
+            MenuItemVM.MenuItem = await _db.MenuItem.Include(m => m.Category).Include(m => m.SubCategory).SingleOrDefaultAsync(m => m.Id == id);
 
             if (MenuItemVM.MenuItem == null)
             {
