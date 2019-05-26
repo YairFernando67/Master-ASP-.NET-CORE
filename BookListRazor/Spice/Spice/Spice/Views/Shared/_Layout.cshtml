@@ -1,4 +1,6 @@
 ﻿@using Spice.Utility
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,7 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
               integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </environment>
     <environment exclude="Development">
@@ -17,7 +19,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
               integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
@@ -29,10 +31,10 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">
-                <img src="~/Images/mild.png" />
-                <img src="~/Images/spicy.png" />
-                <img src="~/Images/verySpicy.png" />
-                <label class="text-info" style="cursor:pointer;">Spice</label>
+                    <img src="~/Images/mild.png" />
+                    <img src="~/Images/spicy.png" />
+                    <img src="~/Images/verySpicy.png" />
+                    <label class="text-info" style="cursor:pointer;">Spice</label>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -45,36 +47,54 @@
                         {
 
 
-                        <li class="nav-item dropdown text-white-50">
-                            <a href="#" class="nav-link dropdown-toggle" 
-                               id="navbarDromDownMenuLink" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" 
-                               aria-expanded="false">Content Managment</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDromDownMenuLink">
-                                <a class="dropdown-item"
-                                   asp-action="Index" asp-controller="Category" 
-                                   asp-area="Admin">Category</a>
-                                <a class="dropdown-item" 
-                                   asp-action="Index" asp-controller="SubCategory" 
-                                   asp-area="Admin">Sub Category</a>
-                                <a class="dropdown-item"
-                                   asp-action="Index" asp-controller="MenuItem"
-                                   asp-area="Admin">Menu Item</a>
-                                <a class="dropdown-item"
-                                   asp-action="Index" asp-controller="Cupon"
-                                   asp-area="Admin">Coupons</a>
-                                <a class="dropdown-item"
-                                   asp-action="Index" asp-controller="User"
-                                   asp-area="Admin"
-                                   >Users</a>
-                            </div>
-                        </li>
+                            <li class="nav-item dropdown text-white-50">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                   id="navbarDromDownMenuLink" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">Content Managment</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDromDownMenuLink">
+                                    <a class="dropdown-item"
+                                       asp-action="Index" asp-controller="Category"
+                                       asp-area="Admin">Category</a>
+                                    <a class="dropdown-item"
+                                       asp-action="Index" asp-controller="SubCategory"
+                                       asp-area="Admin">Sub Category</a>
+                                    <a class="dropdown-item"
+                                       asp-action="Index" asp-controller="MenuItem"
+                                       asp-area="Admin">Menu Item</a>
+                                    <a class="dropdown-item"
+                                       asp-action="Index" asp-controller="Cupon"
+                                       asp-area="Admin">Coupons</a>
+                                    <a class="dropdown-item"
+                                       asp-action="Index" asp-controller="User"
+                                       asp-area="Admin">Users</a>
+                                </div>
+                            </li>
                         }
-                        <li style="color:white;">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-shopping-cart"></i> &nbsp; (0)
-                            </a>
-                        </li>
+
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(@SD.ssShoppingCartCount) != null)
+                        {
+
+                            <li style="color:white;">
+                                <a href="#" class="nav-link">
+                                    @{
+                                        var count = HttpContextAccessor.HttpContext.Session.GetInt32(@SD.ssShoppingCartCount);
+                                    }
+                                    <i class="fas fa-shopping-cart"></i> &nbsp; (@count)
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+
+
+                            <li style="color:white;">
+                                <a href="#" class="nav-link">
+                                    <i class="fas fa-shopping-cart"></i> &nbsp; (0)
+                                </a>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>
