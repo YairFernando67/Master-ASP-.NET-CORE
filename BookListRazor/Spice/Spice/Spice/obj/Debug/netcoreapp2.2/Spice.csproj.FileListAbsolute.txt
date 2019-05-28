@@ -97,3 +97,5 @@ C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Sp
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ThumbnailAreaPartial.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Views\User\Index.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Home\Details.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Cart\Index.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Cart\Summary.g.cshtml.cs
