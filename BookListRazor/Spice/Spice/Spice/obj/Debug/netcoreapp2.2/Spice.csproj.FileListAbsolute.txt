@@ -99,3 +99,8 @@ C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Sp
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Home\Details.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Cart\Index.g.cshtml.cs
 C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Cart\Summary.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\Confirm.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_IndividualOrderDetails.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\OrderHistory.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_OrderStatus.g.cshtml.cs
+C:\Users\yairf\OneDrive\Escritorio\Master .NET CORE\BookListRazor\Spice\Spice\Spice\obj\Debug\netcoreapp2.2\Razor\Areas\Customer\Views\Order\ManageOrder.g.cshtml.cs
